@@ -9,4 +9,4 @@ alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
 alias ll='ls -la --color=auto'
-alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percentage:'
+alias bat='cat /sys/class/power_supply/BAT0/capacity'
