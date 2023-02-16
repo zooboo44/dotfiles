@@ -50,7 +50,7 @@ beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
-editor = os.getenv("nano") or "nano"
+editor = os.getenv("EDITOR") or "nano"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
@@ -62,18 +62,18 @@ modkey = "Mod4"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
-    --awful.layout.suit.floating,
+   -- awful.layout.suit.floating,
     awful.layout.suit.tile,
-    --awful.layout.suit.tile.left,
-    --awful.layout.suit.tile.bottom,
-    --awful.layout.suit.tile.top,
-    --awful.layout.suit.fair,
-    --awful.layout.suit.fair.horizontal,
-    --awful.layout.suit.spiral,
-    --awful.layout.suit.spiral.dwindle,
-    --awful.layout.suit.max,
-    --awful.layout.suit.max.fullscreen,
-    --awful.layout.suit.magnifier,
+   -- awful.layout.suit.tile.left,
+   -- awful.layout.suit.tile.bottom,
+   -- awful.layout.suit.tile.top,
+   -- awful.layout.suit.fair,
+   -- awful.layout.suit.fair.horizontal,
+   -- awful.layout.suit.spiral,
+   -- awful.layout.suit.spiral.dwindle,
+   -- awful.layout.suit.max,
+   -- awful.layout.suit.max.fullscreen,
+   -- awful.layout.suit.magnifier,
    -- awful.layout.suit.corner.nw,
     -- awful.layout.suit.corner.ne,
     -- awful.layout.suit.corner.sw,
@@ -96,9 +96,16 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                                   }
                         })
 
+mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
+                                     menu = mymainmenu })
+
 -- Menubar configuration
 menubar.utils.terminal = terminal -- Set the terminal for applications that require it
 -- }}}
+
+-- Keyboard map indicator and switcher
+mykeyboardlayout = awful.widget.keyboardlayout()
+
 
 local function set_wallpaper(s)
     -- Wallpaper
@@ -121,6 +128,7 @@ awful.screen.connect_for_each_screen(function(s)
 
     -- Each screen has its own tag table.
     awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
+
 end)
 -- }}}
 
@@ -155,9 +163,6 @@ globalkeys = gears.table.join(
         end,
         {description = "focus previous by index", group = "client"}
     ),
-    --awful.key({ modkey,           }, "w", function () mymainmenu:show() end,
-    --          {description = "show main menu", group = "awesome"}),
-
     -- Layout manipulation
     awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end,
               {description = "swap with next client by index", group = "client"}),
@@ -212,12 +217,12 @@ globalkeys = gears.table.join(
                         "request::activate", "key.unminimize", {raise = true}
                     )
                   end
-              end,
-              {description = "restore minimized", group = "client"}),
+              end,              {description = "restore minimized", group = "client"}),
+	--Menubar
+	awful.key({ modkey }, "b", function() awful.util.spawn("brave") end,
+			{ description = "launch browser", group = "client"})
 
-    -- Menubar
-    awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
+
 )
 
 clientkeys = gears.table.join(
@@ -379,11 +384,6 @@ awful.rules.rules = {
         }
       }, properties = { floating = true }},
 
-    -- Add titlebars to normal clients and dialogs
-    --{ rule_any = {type = { "normal", "dialog" }
-    --  }, properties = { titlebars_enabled = true }
-    --},
-
     -- Set Firefox to always map on the tag named "2" on screen 1.
     -- { rule = { class = "Firefox" },
     --   properties = { screen = 1, tag = "2" } },
@@ -405,46 +405,6 @@ client.connect_signal("manage", function (c)
     end
 end)
 
--- Add a titlebar if titlebars_enabled is set to true in the rules.
---client.connect_signal("request::titlebars", function(c)
---    -- buttons for the titlebar
---    local buttons = gears.table.join(
---        awful.button({ }, 1, function()
---            c:emit_signal("request::activate", "titlebar", {raise = true})
---            awful.mouse.client.move(c)
---        end),
---        awful.button({ }, 3, function()
---            c:emit_signal("request::activate", "titlebar", {raise = true})
---            awful.mouse.client.resize(c)
---        end)
---    )
-
---    awful.titlebar(c) : setup {
---        { -- Left
---            awful.titlebar.widget.iconwidget(c),
---            buttons = buttons,
---            layout  = wibox.layout.fixed.horizontal
---        },
---        { -- Middle
---            { -- Title
---                align  = "center",
---                widget = awful.titlebar.widget.titlewidget(c)
---            },
---            buttons = buttons,
---            layout  = wibox.layout.flex.horizontal
---        },
---        { -- Right
---            awful.titlebar.widget.floatingbutton (c),
---            awful.titlebar.widget.maximizedbutton(c),
---            awful.titlebar.widget.stickybutton   (c),
---            awful.titlebar.widget.ontopbutton    (c),
---            awful.titlebar.widget.closebutton    (c),
---            layout = wibox.layout.fixed.horizontal()
---        },
---        layout = wibox.layout.align.horizontal
---    }
---end)
-
 -- Enable sloppy focus, so that focus follows mouse.
 --client.connect_signal("mouse::enter", function(c)
 --    c:emit_signal("request::activate", "mouse_enter", {raise = false})
@@ -454,24 +414,23 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
---autorun application at startup
-awful.spawn.with_shell("nitrogen --restore")
-awful.spawn.with_shell("kmix")
-awful.spawn.with_shell("nm-applet")
-awful.spawn.with_shell("picom --experimental-backends")
-awful.spawn.with_shell("/home/zooboo/.config/polybar/launch.sh")
-
---Window gap
+-- Gaps
 beautiful.useless_gap = 5
 
--- ###CHANGES MADE###
--- autostart wallpaper, picom
--- fix sloppy focus
--- remove extra layouts
--- change close window keybinding mod4+w
+-- Autostart
+awful.spawn.with_shell("/home/zooboo/.config/polybar/launch.sh")
+awful.spawn.with_shell("picom")
+awful.spawn.with_shell("feh --bg-fill --randomize /home/zooboo/Pictures/background")
+-- Unit test
+--awful.spawn.with_shell("brave")
+
+-- Changes
+-- autostart wallpaper, polybar
+-- fix floppy focus
+-- remove wibar
 -- set alacritty as terminal
 -- set nano as default editor
--- remove title bar
--- collision for floating windows
--- removed wibar
--- added polybar
+-- Remove title bars
+-- Keybinding
+	-- run browser
+
