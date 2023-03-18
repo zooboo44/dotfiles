@@ -45,6 +45,7 @@ sudo cp /etc/X11/xinit/xinitrc ~/.xinitrc
     
     
 ### Resources
+- [How To Install and Configure Awesome WM](https://archlinuxblog.medium.com/installing-and-configuring-awesome-wm-b4684fd09c9)
 - [Bulk of initial AWM config](https://youtu.be/nC_e8Gw1XlA)
 - [Polybar](https://youtu.be/ibRa4A4pIws)
 - [Configure Alacritty](https://youtu.be/76GbxnD8wnM)

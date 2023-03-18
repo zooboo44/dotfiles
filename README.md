@@ -1,3 +1,3 @@
 # Christian's Boilerplates
 
-Boilerplates for docker compose, kubernetes, ansible, etc.
+Boilerplates for docker compose, kubernetes, ansible, linux, etc.
