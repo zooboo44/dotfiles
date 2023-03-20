@@ -13,3 +13,11 @@
 yay -S hyprland
 ```
 - Clone Hyprland config from [here]() to ```~/.config/hypr/```
+
+### Up next
+- [ ] Network manager
+- [ ] SDDM
+- [ ] Waybar
+- [ ] Starship
+- [ ] VS Code
+- [ ] Kde connect
