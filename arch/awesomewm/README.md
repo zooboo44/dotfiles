@@ -52,3 +52,7 @@ sudo cp /etc/X11/xinit/xinitrc ~/.xinitrc
 - [Battery Notifications](https://youtu.be/3wTt6fStYCI)
 - [Rofi](https://youtu.be/TutfIwxSE_s)
 - [Polybar](https://youtu.be/ibRa4A4pIws)
+
+### Up Next
+- [Polybar](https://youtu.be/ibRa4A4pIws)
+- [ ] Configure picom blur
