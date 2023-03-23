@@ -18,6 +18,12 @@ yay -S hyprland
 - Install
     - ``` yay -S mako```
 
+### Waybar
+- Install
+    - ```yay -S waybar-hyprland-git```
+- add ```exec-once=waybar``` to ```~/.config/hypr/hyprland.conf```
+- Run manually if not loaded at startup ```waybar > /dev/null 2>&1 &```
+- Add nerdfonts 
 # Up Next
 - [ ] Kde connect
 - [ ] SDDM
