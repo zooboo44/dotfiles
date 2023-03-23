@@ -14,6 +14,10 @@ yay -S hyprland
 ```
 - Clone Hyprland config from [here]() to ```~/.config/hypr/```
 
+### Mako
+- Install
+    - ``` yay -S mako```
+
 # Up Next
 - [ ] Kde connect
 - [ ] SDDM
