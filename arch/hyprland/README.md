@@ -36,7 +36,32 @@ cp -r cascadia /usr/share/fonts
 ```
 
 # Up Next
+---
 - [ ] Kde connect
 - [ ] SDDM
 - [ ] Waybar
 - [ ] Starship
+
+# Issues
+---
+
+# Issue #1
+## Problem
+- Arch system hangs on shutdown
+```
+A stop job is running for Simple Desktop Display Manager
+```
+
+## Resources
+- [KDE plasma bug](https://bugs.kde.org/show_bug.cgi?id=449630)
+- [Slow shutdown problems in kde plasma with sddm](https://github.com/sddm/sddm/issues/1476)
+- [Reducing shutdown timeout for "a stop job is running"](https://github.com/sddm/sddm/issues/1476)
+
+# Idea
+- Replace with sddm-git instead
+- [Modify default timeout for systemd stop to 15sec](https://unix.stackexchange.com/questions/328317/reducing-shutdown-timeout-for-a-stop-job-is-running)
+
+
+# Solution
+- Install sddm-git instead
+- Didn't fix it
