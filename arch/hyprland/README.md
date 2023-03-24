@@ -23,7 +23,18 @@ yay -S hyprland
     - ```yay -S waybar-hyprland-git```
 - add ```exec-once=waybar``` to ```~/.config/hypr/hyprland.conf```
 - Run manually if not loaded at startup ```waybar > /dev/null 2>&1 &```
-- Add nerdfonts 
+
+### Fonts
+- Download [Cascadia Code](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/CascadiaCode.zip)
+- Unzip
+```
+unzip Casc* -d cascadia
+```
+- Copy fonts from ```~/Downloads/cascadia``` to ```/usr/share/fonts/```
+```
+cp -r cascadia /usr/share/fonts
+```
+
 # Up Next
 - [ ] Kde connect
 - [ ] SDDM
