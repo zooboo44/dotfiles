@@ -36,14 +36,12 @@ cp -r cascadia /usr/share/fonts
 ```
 
 # Up Next
----
 - [ ] Kde connect
 - [ ] SDDM
 - [ ] Waybar
 - [ ] Starship
 
 # Issues
----
 
 # Issue #1
 ## Problem
