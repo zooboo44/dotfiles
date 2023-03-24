@@ -35,9 +35,10 @@ unzip Casc* -d cascadia
 cp -r cascadia /usr/share/fonts
 ```
 
+### [SDDM](https://zooboo44.github.io/posts/arch/)
+
 # Up Next
 - [ ] Kde connect
-- [ ] SDDM
 - [ ] Waybar
 - [ ] Starship
 
