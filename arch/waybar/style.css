@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Cascadia", Mono;
     font-size: 13px;
 }
 
@@ -112,7 +112,7 @@ button:hover {
 }
 
 #battery {
-    background-color: #ffffff;
+    background-color: #ea00ff;
     color: #000000;
 }
 
