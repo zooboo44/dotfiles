@@ -35,6 +35,17 @@ unzip Casc* -d cascadia
 cp -r cascadia /usr/share/fonts
 ```
 
+### VS Code Transparent
+- Install
+    ```
+    git clone https://github.com/jnbooth/code-transparent/
+    cd code-transparent
+    makepkg -si
+    ```
+- Config
+    - Replace config from ```~/.config/Code - OSS/User``` with [this](https://github.com/zooboo44/boilerplates/tree/master/arch/vscode-transparent)
+- Takes a long time to install but works perfectly fine (from the minimal testing I've done)
+
 ### [SDDM](https://zooboo44.github.io/posts/arch/)
 
 # Up Next
