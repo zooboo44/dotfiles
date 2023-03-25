@@ -54,6 +54,13 @@ cp -r cascadia /usr/share/fonts
     yay -S pipewire wireplumber pipewire-audio
     ```
 
+### XDPH
+- Install
+    ```
+    yay -S xdg-desktop-portal-hyprland-git
+    ```
+
+
 # Up Next
 - [ ] Kde connect
 - [ ] Waybar
