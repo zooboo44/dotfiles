@@ -18,11 +18,7 @@ yay -S hyprland
 - Install
     - ``` yay -S mako```
 
-### Waybar
-- Install
-    - ```yay -S waybar-hyprland-git```
-- add ```exec-once=waybar``` to ```~/.config/hypr/hyprland.conf```
-- Run manually if not loaded at startup ```waybar > /dev/null 2>&1 &```
+### [Waybar](https://github.com/zooboo44/boilerplates/tree/master/arch/waybar)
 
 ### Fonts
 - Download [Cascadia Code](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/CascadiaCode.zip)
@@ -75,7 +71,6 @@ cp -r cascadia /usr/share/fonts
 
 # Up Next
 - [ ] Kde connect
-- [ ] Waybar
 - [ ] Starship
 - [ ] Pipewire
 - [ ] Nautilus
