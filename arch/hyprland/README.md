@@ -48,6 +48,12 @@ cp -r cascadia /usr/share/fonts
 
 ### [SDDM](https://zooboo44.github.io/posts/arch/)
 
+### Pipewire
+- Install
+    ```
+    yay -S pipewire wireplumber pipewire-audio
+    ```
+
 # Up Next
 - [ ] Kde connect
 - [ ] Waybar
