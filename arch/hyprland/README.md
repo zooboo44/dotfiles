@@ -69,6 +69,12 @@ cp -r cascadia /usr/share/fonts
     yay -S qt5-wayland qt6-wayland
     ```
 
+### Arch Linux Tweak Tool
+- Install
+    ```
+    yay -S archlinux-tweak-tool-git
+    ```
+
 # Up Next
 - [ ] Kde connect
 - [ ] Starship
