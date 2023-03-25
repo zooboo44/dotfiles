@@ -67,6 +67,12 @@ cp -r cascadia /usr/share/fonts
     ```
 - Add ```exec-once=/usr/lib/polkit-kde-authentication-agent-1``` to ```~/.config/hypr/hyprland.conf```
 
+### QT Wayland Support
+- Install
+    ```
+    yay -S qt5-wayland qt6-wayland
+    ```
+
 # Up Next
 - [ ] Kde connect
 - [ ] Waybar
