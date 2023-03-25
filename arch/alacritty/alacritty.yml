@@ -28,10 +28,10 @@ font:
 draw_bold_text_with_bright_colors: true
 
 import:
-  - ~/.config/alacritty/colors.yml
+  - ~/.config/alacritty/nord.yml
 
 selection:
-  save_to_clipboard: false
+  save_to_clipboard: true
 
 shell:
   program: /usr/bin/bash
