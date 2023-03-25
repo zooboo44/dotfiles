@@ -83,7 +83,7 @@ cp -r cascadia /usr/share/fonts
 
 # Issues
 
-## Issue #1
+## #1
 ### Problem
 - Arch system hangs on shutdown
 ```
