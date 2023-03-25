@@ -52,6 +52,9 @@ cp -r cascadia /usr/share/fonts
 - [ ] Kde connect
 - [ ] Waybar
 - [ ] Starship
+- [ ] Pipewire
+- [ ] Nautilus
+- [ ] [Rice](https://www.reddit.com/r/unixporn/comments/105mdur/hyprland_frosted_glass_everywhere/)
 
 # Issues
 
