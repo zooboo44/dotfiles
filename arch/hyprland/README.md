@@ -84,7 +84,7 @@ cp -r cascadia /usr/share/fonts
 # Issues
 
 ## Issue #1
-#### Problem
+### Problem
 - Arch system hangs on shutdown
 ```
 A stop job is running for Simple Desktop Display Manager
