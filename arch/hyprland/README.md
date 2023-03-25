@@ -60,6 +60,11 @@ cp -r cascadia /usr/share/fonts
     yay -S xdg-desktop-portal-hyprland-git
     ```
 
+### Polkit
+- Install
+    ```
+    yay -S polkit-kde-agent
+    ```
 
 # Up Next
 - [ ] Kde connect
