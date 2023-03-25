@@ -65,6 +65,7 @@ cp -r cascadia /usr/share/fonts
     ```
     yay -S polkit-kde-agent
     ```
+- Add ```exec-once=/usr/lib/polkit-kde-authentication-agent-1``` to ```~/.config/hypr/hyprland.conf```
 
 # Up Next
 - [ ] Kde connect
