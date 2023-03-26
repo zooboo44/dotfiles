@@ -87,9 +87,9 @@ cp -r cascadia /usr/share/fonts
     yay -S rofi-lbonn-wayland-git
     ```
 
+### Starship
+
 # Up Next
-- [ ] Kde connect
-- [ ] Starship
 - [ ] Pipewire
 - [ ] Nautilus
 - [ ] [Rice](https://www.reddit.com/r/unixporn/comments/105mdur/hyprland_frosted_glass_everywhere/)
