@@ -75,6 +75,12 @@ cp -r cascadia /usr/share/fonts
     yay -S archlinux-tweak-tool-git
     ```
 
+### OBS
+- Install
+    ```
+    yay -S obs-studio
+    ```
+
 # Up Next
 - [ ] Kde connect
 - [ ] Starship
