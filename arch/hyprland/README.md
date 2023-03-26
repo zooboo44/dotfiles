@@ -89,6 +89,11 @@ cp -r cascadia /usr/share/fonts
 
 ### Starship
 
+### Nautilus
+- Install
+    ```
+    yay -S nautilus
+    ```
 # Up Next
 - [ ] Pipewire
 - [ ] Nautilus
