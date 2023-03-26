@@ -1,13 +1,13 @@
 {
     "workbench.colorCustomizations": {
         // non-standard, transparency patched version only
-        "workbench.background": "#00000080",
+        "workbench.background": "#2E344080",
     
         // VSC colors
         // ref: https://code.visualstudio.com/api/references/theme-color
-        "activityBar.background": "#46575e5e",
-        "button.background": "#00000040",
-        "button.hoverBackground": "#00000080",
+        "activityBar.background": "#2E34405e",
+        "button.background": "#2E344040",
+        "button.hoverBackground": "#2E344080",
     
         "editor.background": "#00000029",
         "editor.lineHighlightBackground": "#FFFFFF15",
@@ -30,7 +30,7 @@
         "statusBar.noFolderBackground": "#00000080",
         "terminal.background": "#0000",
         "titleBar.activeBackground": "#00000030"
-      },
+      }, "editor.fontFamily": "Caskaydia Cove Nerd Font Mono",
     '
     }
 }
