@@ -47,7 +47,7 @@ cp -r cascadia /usr/share/fonts
 ### Pipewire
 - Install
     ```
-    yay -S pipewire wireplumber pipewire-audio
+    yay -S pipewire wireplumber pipewire-audio qjackctl
     ```
 
 ### XDPH
@@ -79,6 +79,12 @@ cp -r cascadia /usr/share/fonts
 - Install
     ```
     yay -S obs-studio
+    ```
+
+###
+- Install rofi
+    ```
+    yay -S rofi-lbonn-wayland-git
     ```
 
 # Up Next
