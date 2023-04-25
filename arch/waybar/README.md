@@ -4,7 +4,7 @@
 waybar-hyprland-git
 ```
 # Configure
-- Copy configs from [here](https://github.com/zooboo44/boilerplates/tree/master/arch/waybar) to ```~/.config/waybar/```
+- Copy configs from [here](https://github.com/zooboo44/dotfiles/tree/master/arch/waybar) to ```~/.config/waybar/```
 - Add ```exec-once=waybar``` to ```~/.config/hyprland/hyprland.conf```
 
 # Resources

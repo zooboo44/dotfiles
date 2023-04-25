@@ -16,7 +16,7 @@ sudo cp /etc/X11/xinit/xinitrc ~/.xinitrc
     mkdir ~/.config/awesome
     cp /etc/xdg/awesome/rc.lua ~/.config/awesome/rc.lua
     ```
-    or clone ```rc.lua``` from [here](https://github.com/zooboo44/boilerplates)
+    or clone ```rc.lua``` from [here](https://github.com/zooboo44/dotfiles)
 
 - Run ```startx``` wait for prompt to hang then force shutdown and ```startx``` should work fine
 
@@ -28,12 +28,12 @@ sudo cp /etc/X11/xinit/xinitrc ~/.xinitrc
     mkdir ~/.config/picom
     copy /etc/xdg/example.picom.conf ~/.config/picom/picom.conf
     ```
-    or clone picom.conf from [here](https://github.com/zooboo44/boilerplates)
+    or clone picom.conf from [here](https://github.com/zooboo44/dotfiles)
 - Polybar
     - ```yay -S polybar```
     - Remove existing bar (wibar)
-    - Create [launch.sh](https://github.com/zooboo44/boilerplates) script to launch bar
-    - Launch bar from rc.lua to launch using [config.ini](https://github.com/zooboo44/boilerplates)
+    - Create [launch.sh](https://github.com/zooboo44/dotfiles) script to launch bar
+    - Launch bar from rc.lua to launch using [config.ini](https://github.com/zooboo44/dotfiles)
         - ```awful.spawn.with_shell("/home/zooboo/.config/polybar/launch.sh")```
     - Added [battery module](https://github.com/polybar/polybar/wiki/Module:-battery)
     - Add applets
