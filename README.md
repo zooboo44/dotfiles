@@ -1,3 +1,3 @@
-# Christian's Boilerplates
+# Christian's dotfiles
 
-Boilerplates for docker compose, kubernetes, ansible, linux, etc.
+Dotfiles for arch config
