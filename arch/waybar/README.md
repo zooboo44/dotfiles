@@ -1,7 +1,7 @@
 # Install
 - Install waybar
 ```
-waybar-hyprland-git
+yay -S waybar-hyprland-git
 ```
 # Configure
 - Copy configs from [here](https://github.com/zooboo44/dotfiles/tree/master/arch/waybar) to ```~/.config/waybar/```
