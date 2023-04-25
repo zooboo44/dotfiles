@@ -28,7 +28,7 @@ unzip Casc* -d cascadia
 ```
 - Copy fonts from ```~/Downloads/cascadia``` to ```/usr/share/fonts/```
 ```
-cp -r cascadia /usr/share/fonts
+sudo cp -r cascadia /usr/share/fonts
 ```
 
 ### VS Code Transparent
