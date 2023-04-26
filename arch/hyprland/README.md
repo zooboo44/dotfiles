@@ -81,7 +81,7 @@ sudo cp -r cascadia /usr/share/fonts
     yay -S obs-studio
     ```
 
-###
+### Rofi
 - Install rofi
     ```
     yay -S rofi-lbonn-wayland-git
@@ -95,8 +95,6 @@ sudo cp -r cascadia /usr/share/fonts
     yay -S nautilus
     ```
 # Up Next
-- [ ] Pipewire
-- [ ] Nautilus
 - [ ] [Rice](https://www.reddit.com/r/unixporn/comments/105mdur/hyprland_frosted_glass_everywhere/)
 - [ ] [Virtual Machine Manager](https://virt-manager.org/download.html)
 
