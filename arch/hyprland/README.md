@@ -95,8 +95,11 @@ sudo cp -r cascadia /usr/share/fonts
     yay -S nautilus
     ```
 # Up Next
-- [ ] [Rice](https://www.reddit.com/r/unixporn/comments/105mdur/hyprland_frosted_glass_everywhere/)
 - [ ] [Virtual Machine Manager](https://virt-manager.org/download.html)
+
+# Resources
+- [Pre configured rice](https://youtu.be/lfUWwZqzHmA)
+- [Frosted Glass Rice](https://www.reddit.com/r/unixporn/comments/105mdur/hyprland_frosted_glass_everywhere/)
 
 # Issues
 
