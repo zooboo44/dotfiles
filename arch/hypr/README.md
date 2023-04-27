@@ -47,7 +47,7 @@ sudo cp -r cascadia /usr/share/fonts
 ### Pipewire
 - Install
     ```
-    yay -S pipewire wireplumber pipewire-audio qjackctl
+    yay -S pipewire wireplumber pipewire-audio qjackctl pavucontrol
     ```
 
 ### XDPH
