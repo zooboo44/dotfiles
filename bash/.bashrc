@@ -13,3 +13,4 @@ alias ll='ls -la --color=auto'
 alias bat='cat /sys/class/power_supply/BAT0/capacity'
 alias wgdn='nmcli connection down my-wg0'
 alias wgup='nmcli connection up my-wg0'
+eval "$(starship init bash)"
