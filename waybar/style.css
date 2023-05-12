@@ -45,7 +45,7 @@ tooltip {
 #workspaces button:hover {
     background: #11111b;
     color: #cdd6f4;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 #custom-power_profile,
@@ -107,7 +107,7 @@ tooltip {
 
 #clock {
     color: #fab387;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px 10px 10px 10px;
     margin-left: 10px;
     border-right: 0px;
 }
