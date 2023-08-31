@@ -15,3 +15,4 @@ alias wgdn='nmcli connection down my-wg0'
 alias wgup='nmcli connection up my-wg0'
 eval "$(starship init bash)"
 alias vim='nvim'
+alias mountcz='sudo mount -t cifs -o credentials=/.smbcreds //192.168.1.242/cz /media/cz'
