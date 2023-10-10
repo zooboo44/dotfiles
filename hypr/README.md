@@ -1,12 +1,6 @@
 # Install and configure Hyprland
 
-### Prerequisites
-- base-devel
-- git
-- yay
-- kitty
-
-### Install
+1. Install
 - [Hyprland Wiki for more info](https://wiki.hyprland.org/)
 - Install Hyprland
 ```
@@ -14,11 +8,33 @@ yay -S hyprland
 ```
 - Clone Hyprland config from [here]() to ```~/.config/hypr/```
 
+2. Install must have packages defined [here](https://wiki.hyprland.org/Useful-Utilities/Must-have/)
+- All configs are in the hyprland config
 ### Mako
-- Install
-    - ``` yay -S mako```
+- ``` yay -S mako```
+
+### Pipewire
+- ```yay -S pipewire wireplumber pipewire-audio qjackctl pavucontrol```
+
+### XDG Desktop Portal
+- ```yay -S xdg-desktop-portal-hyprland-git```
+    - If "ERROR: Dependency "sdbus-c++" not foun, tried pkgconfig and cmake" occus, install sdbus-c++ with ```yay -S sdbus-cpp```
+
+### Polkit
+- ```yay -S polkit-kde-agent```
+
+### Qt Wayland Support
+- ```yay -S qt5-wayland qt6-wayland```
+
+3. Themeing
 
 ### [Waybar](https://github.com/zooboo44/dotfiles/tree/master/arch/waybar)
+
+### [SDDM](https://zooboo44.github.io/posts/arch/)
+
+### [Wofi](https://github.com/zooboo44/dotfiles/tree/master/wofi)
+
+### [Starship](https://github.com/zooboo44/dotfiles/tree/master/starship)
 
 ### Fonts
 - Download [Cascadia Code](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/CascadiaCode.zip)
@@ -42,33 +58,6 @@ sudo cp -r cascadia /usr/share/fonts
     - Replace config from ```~/.config/Code - OSS/User``` with [this](https://github.com/zooboo44/dotfiles/tree/master/arch/vscode-transparent)
 - Takes a long time to install but works perfectly fine (from the minimal testing I've done)
 
-### [SDDM](https://zooboo44.github.io/posts/arch/)
-
-### Pipewire
-- Install
-    ```
-    yay -S pipewire wireplumber pipewire-audio qjackctl pavucontrol
-    ```
-
-### XDPH
-- Install
-    ```
-    yay -S xdg-desktop-portal-hyprland-git
-    ```
-
-### Polkit
-- Install
-    ```
-    yay -S polkit-kde-agent
-    ```
-- Add ```exec-once=/usr/lib/polkit-kde-authentication-agent-1``` to ```~/.config/hypr/hyprland.conf```
-
-### QT Wayland Support
-- Install
-    ```
-    yay -S qt5-wayland qt6-wayland
-    ```
-
 ### Arch Linux Tweak Tool
 - Install
     ```
@@ -81,25 +70,16 @@ sudo cp -r cascadia /usr/share/fonts
     yay -S obs-studio
     ```
 
-### Rofi
-- Install rofi
-    ```
-    yay -S rofi-lbonn-wayland-git
-    ```
-
-### Starship
-
 ### Nautilus
 - Install
     ```
     yay -S nautilus
     ```
-# Up Next
-- [ ] [Virtual Machine Manager](https://virt-manager.org/download.html)
 
 # Resources
 - [Pre configured rice](https://youtu.be/lfUWwZqzHmA)
 - [Frosted Glass Rice](https://www.reddit.com/r/unixporn/comments/105mdur/hyprland_frosted_glass_everywhere/)
+- [Arch + Hyprland Tour in 60 Seconds](https://youtu.be/gOGM0uHCDFk?si=U2Ii3zK4pwFb95Q3)
 
 # Issues
 
