@@ -5,7 +5,7 @@ yay -S waybar-hyprland-git
 ```
 - Install modules
 ```
-yay -S pamixer
+yay -S pamixer brightnessctl
 ```
 # Configure
 - Copy configs from [here](https://github.com/zooboo44/dotfiles/tree/master/arch/waybar) to ```~/.config/waybar/```
